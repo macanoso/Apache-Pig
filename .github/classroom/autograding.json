@@ -1,0 +1,314 @@
+{
+  "tests": [
+    {
+      "name": "Pregunta 01",
+      "setup": "docker pull jdvelasq/pig:classroom",
+      "run": "python3 pregunta_01/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 02",
+      "setup": "docker pull jdvelasq/pig:classroom",
+      "run": "python3 pregunta_02/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 03",
+      "setup": "docker pull jdvelasq/pig:classroom",
+      "run": "python3 pregunta_03/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 04",
+      "setup": "docker pull jdvelasq/pig:classroom",
+      "run": "python3 pregunta_04/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 05",
+      "setup": "docker pull jdvelasq/pig:classroom",
+      "run": "python3 pregunta_05/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 06",
+      "setup": "docker pull jdvelasq/pig:classroom",
+      "run": "python3 pregunta_06/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 07",
+      "setup": "docker pull jdvelasq/pig:classroom",
+      "run": "python3 pregunta_07/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 08",
+      "setup": "docker pull jdvelasq/pig:classroom",
+      "run": "python3 pregunta_08/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 09",
+      "setup": "docker pull jdvelasq/pig:classroom",
+      "run": "python3 pregunta_09/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 10",
+      "setup": "docker pull jdvelasq/pig:classroom",
+      "run": "python3 pregunta_10/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 11",
+      "setup": "docker pull jdvelasq/pig:classroom",
+      "run": "python3 pregunta_11/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 12",
+      "setup": "docker pull jdvelasq/pig:classroom",
+      "run": "python3 pregunta_12/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 13",
+      "setup": "docker pull jdvelasq/pig:classroom",
+      "run": "python3 pregunta_13/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 14",
+      "setup": "docker pull jdvelasq/pig:classroom",
+      "run": "python3 pregunta_14/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 15",
+      "setup": "docker pull jdvelasq/pig:classroom",
+      "run": "python3 pregunta_15/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 16",
+      "setup": "docker pull jdvelasq/pig:classroom",
+      "run": "python3 pregunta_16/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 17",
+      "setup": "docker pull jdvelasq/pig:classroom",
+      "run": "python3 pregunta_17/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 18",
+      "setup": "docker pull jdvelasq/pig:classroom",
+      "run": "python3 pregunta_18/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 19",
+      "setup": "docker pull jdvelasq/pig:classroom",
+      "run": "python3 pregunta_19/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 20",
+      "setup": "docker pull jdvelasq/pig:classroom",
+      "run": "python3 pregunta_20/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 21",
+      "setup": "docker pull jdvelasq/pig:classroom",
+      "run": "python3 pregunta_21/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 22",
+      "setup": "docker pull jdvelasq/pig:classroom",
+      "run": "python3 pregunta_22/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 23",
+      "setup": "docker pull jdvelasq/pig:classroom",
+      "run": "python3 pregunta_23/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 24",
+      "setup": "docker pull jdvelasq/pig:classroom",
+      "run": "python3 pregunta_24/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 25",
+      "setup": "docker pull jdvelasq/pig:classroom",
+      "run": "python3 pregunta_25/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 26",
+      "setup": "docker pull jdvelasq/pig:classroom",
+      "run": "python3 pregunta_26/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 27",
+      "setup": "docker pull jdvelasq/pig:classroom",
+      "run": "python3 pregunta_27/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 28",
+      "setup": "docker pull jdvelasq/pig:classroom",
+      "run": "python3 pregunta_28/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 29",
+      "setup": "docker pull jdvelasq/pig:classroom",
+      "run": "python3 pregunta_29/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 30",
+      "setup": "docker pull jdvelasq/pig:classroom",
+      "run": "python3 pregunta_30/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 31",
+      "setup": "docker pull jdvelasq/pig:classroom",
+      "run": "python3 pregunta_31/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}

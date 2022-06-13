@@ -16,4 +16,13 @@ $ pig -x local -f pregunta.pig
 
         >>> Escriba su respuesta a partir de este punto <<<
 */
-
+data = LOAD 'data.tsv' AS (
+        word:chararray, 
+        bag_info:BAG{A:tuple(B:chararray)}, 
+        map_info:map[]
+    );
+read_data = FOREACH data GENERATE flatten(bag_info) as word, flatten(map_info) as word_long;
+joined = FOREACH read_data GENERATE(word,word_long) as tuple_data; 
+group_by = GROUP joined BY tuple_data;
+counter = FOREACH group_by GENERATE group, COUNT(joined);
+STORE counter INTO 'output' USING PigStorage(',');

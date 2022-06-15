@@ -29,5 +29,5 @@ data = LOAD 'data.csv' USING PigStorage(',')
             value:int
     );
 
-birthday = FOREACH data GENERATE  REGEX_EXTRACT(Birth,'(.*)-(.*)-(.*)', 2);
+birthday = FOREACH data GENERATE  INDEXOF(Name,'a', 1);
 STORE birthday INTO 'output' USING PigStorage(',');

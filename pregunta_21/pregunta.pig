@@ -22,3 +22,16 @@ $ pig -x local -f pregunta.pig
         >>> Escriba su respuesta a partir de este punto <<<
 */
 
+data = LOAD 'data.csv' USING PigStorage(',')
+    AS (
+            Id:int,
+            Name:chararray,
+            LastName:chararray,
+            Birth:chararray,
+            color:chararray,
+            value:int
+    );
+
+Zoe_blue = FOREACH data GENERATE Name, color; 
+variable = FILTER Zoe_blue BY (color=='blue') or (color=='green');
+STORE variable INTO 'output' USING PigStorage(',');

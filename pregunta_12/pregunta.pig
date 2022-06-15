@@ -26,4 +26,16 @@ $ pig -x local -f pregunta.pig
 
         >>> Escriba su respuesta a partir de este punto <<<
 */
+data = LOAD 'data.csv' USING PigStorage(',')
+    AS (
+            Id:int,
+            Name:chararray,
+            LastName:chararray,
+            Birth:chararray,
+            color:chararray,
+            value:int
+    );
 
+last_name = FOREACH data GENERATE LastName; 
+variable = FILTER last_name BY (LastName>'D') AND (LastName<'L');
+STORE variable INTO 'output' USING PigStorage(',');

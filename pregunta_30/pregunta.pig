@@ -34,3 +34,27 @@ $ pig -x local -f pregunta.pig
         >>> Escriba su respuesta a partir de este punto <<<
 */
 
+data = LOAD 'data.csv' USING PigStorage(',')
+    AS (
+            Id:int,
+            Name:chararray,
+            LastName:chararray,
+            Birth:chararray,
+            color:chararray,
+            value:int
+    );
+
+read = FOREACH data GENERATE ToDate(Birth,'yyyy-MM-dd') as date;
+data = FOREACH read GENERATE ToString(date, 'yyyy-MM-dd') as completa,                              
+                              ToString(date, 'dd') as dia, 
+                              ToString(date, 'd') as ndia,
+                              LOWER(ToString(date, 'EEEE')) as day,
+                              LOWER(ToString(date, 'E')) as d;
+
+data = FOREACH data GENERATE completa, dia, ndia, REPLACE(d,'thu','jue') AS d, REPLACE(day,'thursday','jueves') AS day;
+data = FOREACH data GENERATE completa, dia, ndia, REPLACE(d,'sun','dom') AS d, REPLACE(day,'sunday','domingo') AS day;
+data = FOREACH data GENERATE completa, dia, ndia, REPLACE(d,'fri','vie') AS d, REPLACE(day,'friday','viernes') AS day;
+data = FOREACH data GENERATE completa, dia, ndia, REPLACE(d,'mon','lun') AS d, REPLACE(day,'monday','lunes') AS day;
+data = FOREACH data GENERATE completa, dia, ndia, REPLACE(d,'tue','mar') AS d, REPLACE(day,'tuesday','martes') AS day;
+data = FOREACH data GENERATE completa, dia, ndia, REPLACE(d,'wed','mie') AS d, REPLACE(day,'wednesday','miercoles') AS day;
+STORE data INTO 'output' USING PigStorage(',');

@@ -44,5 +44,12 @@ data = LOAD 'data.csv' USING PigStorage(',')
     );
 
 data = FOREACH data GENERATE ToDate(Birth,'yyyy-MM-dd') as date;
-total = FOREACH data GENERATE ToString(date, 'yyyy-MM-dd'), LOWER(ToString(date, 'MMM')), ToString(date, 'MM'),ToString(date, 'M');
-STORE total INTO 'output' USING PigStorage(',');
+total = FOREACH data GENERATE ToString(date, 'yyyy-MM-dd') as date_final, 
+                              LOWER(ToString(date, 'MMM')) as month_long, 
+                              ToString(date, 'MM') as number_month,
+                              ToString(date, 'M') as number;
+replaced = FOREACH total GENERATE date_final, REPLACE (month_long,'jan','ene') AS month_long, number_month, number;
+replaced = FOREACH replaced GENERATE date_final, REPLACE (month_long,'apr','abr') AS month_long, number_month, number;
+replaced = FOREACH replaced GENERATE date_final, REPLACE (month_long,'aug','ago') AS month_long, number_month, number;
+replaced = FOREACH replaced GENERATE date_final, REPLACE (month_long,'dec','dic') AS month_long, number_month, number;                             
+STORE replaced INTO 'output' USING PigStorage(',');

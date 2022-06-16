@@ -26,5 +26,5 @@ data = LOAD 'data.csv' USING PigStorage(',')
 
 data = FOREACH data GENERATE SUBSTRING(Birth,0,4) as year;
 group_by = GROUP data BY year;
-counter = FOREACH group_by GENERATE group, COUNT(year);
+counter = FOREACH group_by GENERATE group, COUNT($1);
 STORE counter INTO 'output' USING PigStorage(',');
